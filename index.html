@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>UOPS EXTJS Examples Browser</title>
+
+	<!-- ExtJS 4.1.x  -->
+    <script src="http://extjs.cachefly.net/ext-4.1.1-gpl/ext-all.js"></script>
+    <link rel="stylesheet" href="http://extjs.cachefly.net/ext-4.1.1-gpl/resources/css/ext-all.css">
+
+    <!-- ExtJS 4.0.x 
+    <script src="http://extjs.cachefly.net/ext-4.0.7-gpl/ext-all.js"></script>
+    <link rel="stylesheet" href="http://extjs.cachefly.net/ext-4.0.7-gpl/resources/css/ext-all.css">
+    -->
+</head>
+<body>
+<script>
+Ext.application({
+    name: 'ExampleBrowser',
+    launch: function() {
+    	Ext.create('Ext.container.Viewport', {
+    	    layout: 'fit',
+    	    items: [{
+    	    	xtype: 'panel',
+    	        title: 'Example Browser',	        	        
+        	    bodyPadding: 10,
+        	   	html: 'Example browser comming soon... (maybe)'	            	    	
+    	    }]
+    	});
+    }
+});
+</script>
+</body>
+</html>
