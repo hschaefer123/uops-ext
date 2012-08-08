@@ -11,3 +11,9 @@ http://www.sencha.com/forum/showthread.php?234135-Ext.ux.IconLoader
 
 WorldMap<br/>
 http://www.sencha.com/forum/showthread.php?235947-Ex.ux.WorldMap-component
+
+<h3>UOPS config.js top include</h3>
+Besides this, i added my config.js to show an example of usefull overrides!
+
+If you are working with server side business logic and also with locales 
+different from en_US, then maybe you should have a look into it 
