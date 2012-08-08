@@ -1,4 +1,4 @@
-<h2>Extension for EXTJS 4.1.x</h2>
+<h2>Extensions for EXTJS 4.1.x</h2>
 
 Here you can find some Ext JS 4.1.x User Extensions that are working
 and mentioned inside some Sencha forum posts:<br/>
