@@ -62,17 +62,20 @@ Ext.override(Ext.form.field.Checkbox, {
 	// attribute and should be used as the parameter value when submitting as
 	// part of a form. Defaults: on
 	inputValue : 1,
+	//inputValue : 'X', // SAP AS ABAP (ERP) uses 'X' for true booleans
 	// If configured, this will be submitted as the checkbox's value during form
 	// submit if the checkbox is unchecked. By default this is undefined, which
 	// results in nothing being submitted for the checkbox field when the form
 	// is submitted (the default behavior of HTML checkboxes).
 	uncheckedValue : 0
+	// uncheckedValue : '', // SAP AS ABAP (ERP) uses '' for false booleans
 });
 
 Ext.override(Ext.form.field.Date, {
 	// The date format string which will be submitted to the server.
 	// The format must be valid according to Ext.Date.parse.
-	submitFormat : 'Y-m-d'
+	submitFormat : 'Y-m-d' // PHP (Zend Framework)
+	//submitFormat : 'Ymd' // SAP AS ABAP (ERP)		
 });
 
 Ext.override(Ext.form.field.Number, {
