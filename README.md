@@ -16,4 +16,6 @@ http://www.sencha.com/forum/showthread.php?235947-Ex.ux.WorldMap-component
 Besides this, i added my config.js to show an example of usefull overrides!
 
 If you are working with server side business logic and also with locales 
-different from en_US, then maybe you should have a look into it 
+different from en_US, then maybe you should have a look into it:
+
+<a href="https://github.com/hschaefer123/uops-ext/blob/master/library/uops/config.js">./library/config.js</a> 
