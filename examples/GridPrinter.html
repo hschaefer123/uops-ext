@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>GridPrinter Example</title>
+
+	<!-- ExtJS 4.1.x  -->
+    <script src="http://extjs.cachefly.net/ext-4.1.1-gpl/ext-all-debug.js"></script>    
+    <link rel="stylesheet" href="http://extjs.cachefly.net/ext-4.1.1-gpl/resources/css/ext-all.css">
+
+    <!-- include example specific resources -->
+    <link rel="stylesheet" href="../resources/css/ux-grid-Printer.css">
+    <script src="http://extjs.cachefly.net/ext-4.1.1-gpl/examples/ux/IFrame.js"></script>
+    <script src="../library/uops/ux/IconLoader.js"></script>    
+    <script src="../library/uops/ux/grid/Printer.js"></script>    
+</head>
+<body>
+<script>
+Ext.ux.IconLoader.initialize({
+	path: 'http://famfamfam.googlecode.com/svn/wiki/images/',
+	useLibPath: false
+});
+
+Ext.application({
+    name: 'GridPrinter',
+	launch: function() {
+       	Ext.create('Ext.container.Viewport', {
+       	    layout: 'fit',
+       	    items: {
+       	        xtype: 'gridpanel',
+       	        title: 'Grid Printer Example',
+       	     	tools:[{
+       	      		type: 'print',
+					handler: function(event, toolEl, panel) {
+						var grid = this.up('grid');
+				        Ext.ux.grid.Printer.mainTitle = grid.title;
+				        Ext.ux.grid.Printer.print(grid, toolEl);
+					}
+				}],
+           	    store: Ext.create('Ext.data.Store', {
+           	    	fields: [{
+           	    		name: 'text',
+           	    		type: 'string'
+           	    	}, {
+           	    		name: 'int',
+           	    		type: 'int'        	    		
+           	    	}, {
+           	    		name: 'float',
+           	    		type: 'float'
+           	    	}, {
+           	    		name: 'date',
+           	    		type: 'date'           	    		
+           	    	}],
+           	    	data: [{
+						text: 'Hello World',
+						int: 1,
+						float: 123.45,
+						date: '2012-01-01'
+           	    	}, {
+           	    		text: 'Ext JS is great',
+           	    		int: 2,
+						float: 234.56,
+						date: '2012-08-09'
+           	    	}]
+           	    }),    
+       	        columns: [{
+       	        	xtype: 'gridcolumn',
+					dataIndex: 'text',
+					text: 'Text'
+       	        }, {
+       	        	xtype: 'numbercolumn',
+   					dataIndex: 'int',
+   					align: 'right',
+   					text: 'Int'
+       	     	}, {
+    	        	xtype: 'numbercolumn',
+					dataIndex: 'float',
+					align: 'right',
+					text: 'Float'
+       	     	}, {
+    	        	xtype: 'datecolumn',
+					dataIndex: 'date',
+					text: 'Date'
+       	     	}, {
+    	        	xtype: 'templatecolumn',
+    	        	dataIndex: 'date',
+    	        	tpl: 'ID: {int}',		
+    	        	align: 'center',
+					text: 'Template'   															
+       	        }]
+       	    }
+       	});
+	}
+});
+</script>
+</body>
+</html>
