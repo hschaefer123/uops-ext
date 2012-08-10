@@ -11,6 +11,7 @@ http://www.sencha.com/forum/showthread.php?234135-Ext.ux.IconLoader
 
 WorldMap<br/>
 Demo: http://jsfiddle.net/hschaefer123/JGVAK/
+
 Forum: http://www.sencha.com/forum/showthread.php?235947-Ex.ux.WorldMap-component
 
 <h3>UOPS <a href="https://github.com/hschaefer123/uops-ext/blob/master/library/uops/config.js">config.js</a> top include</h3>
