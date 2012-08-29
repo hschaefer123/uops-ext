@@ -117,6 +117,7 @@ Ext.define("Ext.ux.grid.Printer", {
             columns = clearColumns;
             
             //get Styles file relative location, if not supplied
+            console.log(this.stylesheetPath);
             if (this.stylesheetPath === null) {
             	/*
                 var scriptPath = Ext.Loader.getPath('Ext.ux.grid.Printer'); // library/extjs/src/ux/grid/Printer.js
