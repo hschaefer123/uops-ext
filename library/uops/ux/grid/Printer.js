@@ -214,7 +214,9 @@ Ext.define("Ext.ux.grid.Printer", {
 	                            text: this.printLinkText,
 	                            iconCls: 'icon-printer',
 	                            handler: function(btn, e) {
-	                            	iframe.getWin().print();
+	                            	var win = iframe.getWin();
+	                            	win.focus();
+	                            	win.print();
 	                            },
 	                            scope: this
 	                        },
