@@ -125,6 +125,7 @@ Ext.define("Ext.ux.grid.Printer", {
                 */            	
             	this.stylesheetPath = '../resources/css/ux-grid-Printer.css';
             }
+            console.log(this.stylesheetPath);
 
             //use the headerTpl and bodyTpl markups to create the main XTemplate below
             var headings = Ext.create('Ext.XTemplate', this.headerTpl).apply(columns);
