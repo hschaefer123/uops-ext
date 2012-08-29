@@ -4,7 +4,7 @@ Here you can find some Ext JS 4.1.x User Extensions that are working
 and mentioned inside some Sencha forum posts:<br/>
  
 GridPrinter<br/>
-Demo: http://jsfiddle.net/hschaefer123/NHfsN/
+Demo: http://jsfiddle.net/hschaefer123/NHfsN/ <br/>
 Forum: http://www.sencha.com/forum/showthread.php?146348-ExtJS-4-Grid-Printer-Plugin/page4
 
 IconLoader<br/>
